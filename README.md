@@ -1,1 +1,3 @@
-# progress-tracker
+# Progress Tracker
+
+Personal progress tracker repository
