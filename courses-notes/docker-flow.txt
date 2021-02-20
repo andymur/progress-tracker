@@ -1,0 +1,89 @@
+image -> running container
+
+
+docker commit: container -> image
+docker run: image -> container
+docker tag: make a name for an image
+
+
+docker commit container_id new_image_name
+
+
+---
+
+docker run -- starts the container with main process (until main process stops)
+
+docker attach -- to go into the container
+
+
+docker exec -ti <container_name> bash (or another process) -- run the process inside the container
+
+docker logs -- we can look what's happenning inside
+
+docker kill container_name -- stops the container
+
+docker run --memory (to set used memory)
+
+-- exposing ports & networking --
+
+private networks for containers
+
+docker run -p <inside_port>:<outside_port>(/<protocol>) --name <container name>
+
+docker port <container_name> -- to see which ports are used
+
+docker virtual network
+
+bridge -- default
+host -- no isolation
+none -- no networking
+
+docker network create <network_name>
+
+docker run --rm -ti --net <network_name> --name <container_name>
+
+docker network connect <network_name> <container_name>
+
+docker pull
+
+docker push
+
+docker rmi <image_id> -- remove image
+
+volumes
+
+to share data between containers & host<->container
+
+persistent/ephemeral
+
+only local for th host
+
+
+docker run -ti -v <shared_dir>:<internal_path> 
+
+docker run -ti -v <shared_dir_name> -- between containers
+
+docker run -ti --volumes-from  <container_name> -- between containers
+
+docker registries
+
+docker search  <image_name> -- search for images
+
+hub.docker.com
+
+Docker files
+
+docker build -t <name_of_result> <path_to_docker_file>
+
+FROM -- starting image
+MAINTAINER -- responsible person
+ADD -- add local file / unarchive file / download from URL
+RUN -- run a shell command
+ENV -- sets environment variable
+ENTRYPOINT -- 
+CMD
+EXPOSE -- maps port
+VOLUME -- defines volumes
+WORKDIR -- like a cd
+USER -- run under user
+COPY -- copy from

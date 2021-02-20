@@ -1,0 +1,18 @@
+What web socket is:
+	
+	full duplex bi directional communication
+
+Send special header (initial handshake) switching from http to web socket.
+
+alternatives:
+	- polling (ajax request every n secs)
+	- long polling (keep connection with server until response from it and reestablish the connection each time response comes)
+	- server sent events
+		not bi-directional. uses some eventsource api to send messages from server
+
+
+web sockets is not compatible with REST
+
+libs:
+	SocketIO (fall back to long polling)
+		

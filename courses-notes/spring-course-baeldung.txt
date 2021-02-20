@@ -1,0 +1,3 @@
+BeanPostProcessor allows us to modify a bean or execute custom code after the bean is instantiated by the container.
+
+The container invokes the BeanPostProcessor for each and every bean

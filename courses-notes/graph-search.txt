@@ -1,0 +1,68 @@
+source vertex (initial vertex)
+find path to any other node
+
+1. find everything in undirected g from initial v.
+2. don't explore anything twice O(m+n) time, m edges n nodes
+
+S -- set of unexplored nodes
+
+expored nodes set vs unexplored nodes set
+
+BFS
+	- min distance problem
+	- connected components
+DFS
+	- topological ordering
+	- connected components in DG
+
+
+Breadth First Search
+
+
+put s in q
+mark q as visited
+while q is not empty
+	n = take q
+	[m] = adjacent of n filtered by non visited
+	put [m] in q
+	mark [m] as visited
+
+
+BFS & Shortest path
+
+DIST(s,v) -- shortest path
+
+initialize dist(s,v) = 0 for s else INF
+
+undirected connectivity
+
+finding connected components
+
+u and v belong to component if there is a path u,v
+
+for i=1,n
+	if vi is not explored
+		BFS(vi, G)
+
+depth first search
+
+topological sort of directed graph
+
+giving numbers 1..n for v say f(v)
+
+f(v1) < f(v2) if v1 -> v2 in directed graph
+
+graph must be a DAG
+
+sink vertex -- vertex w/o outgoing edges
+
+connected components in DG
+
+u strongly connected to v -> exist paths u->v and v->u
+
+kosaraju algo
+
+run DFS on the graph with inverted arcs (compute set of "right" nodes)
+
+run DFS on the original graph starting from "right" nodes
+ 

@@ -1,0 +1,94 @@
+Some Advantages of cloud
+
+	CapEx vs OpEx
+
+	no contractual commitment
+
+	costs decrease over time
+
+	reduced procurement delays
+
+	shared responsibility model
+	pay as you go
+
+	flexibility
+		- elasticity
+
+	massive global infrastructure
+
+	regions
+	availability zones
+	edge locations
+
+	SaaS, PaaS, IaaS (XaaS)
+
+	API emphasis
+
+	RESTful APIs
+
+Key Services of AWS
+
+	Compute & Storage & DB & Networking components
+
+	Compute
+
+		Lightsail lighter version of EC2
+		Lambda only for computing (instead of normal vm)
+		Batch similar to lambda but jobs instead of functions
+
+		Elastic Beanstalk is a paas 
+		Serverless Application Repository is for Lambda
+
+		Containers is an evolution of compute components
+
+		Elastic Container Registry is a catalog for the containers
+		Elastic Container Service for docker containers
+		Elastic K8s Service for k8s
+
+	Storage
+
+		S3 is a big bucket
+		EFS (elastic nfs for *nix machines)
+		FSx for windows but it is umbrella term
+		S3 Glacier for archives
+		Storage Gateway 
+		AWS Backup
+
+	Database
+
+		RDS (different relational engines)
+		Dynamo DB (NoSQL)
+		Elastic Cache (Redis & Memcached)
+		Neptune (Graph database engine)
+		Redshift (for data warehouse)
+		DocumentDB (document db storage)
+
+	Network & CD
+
+		VPC (virtual private cloud) space for network components (ip subnets, routing firewalls, network interface cards)
+		CloudFront for remote areas kind of CD
+		Route 53 -- DNS service
+		API Gateway make APIs globally awailable
+
+AWS Management Options
+
+	AWS CLI
+	AWS SDKs
+	Identity and access management (IAM)
+	```aws configure``` to setup an access
+
+Well Architected Framework (consider reading it)
+
+	5 pillars:
+		Operational excellence
+		Security
+		Reliability
+		Performance efficiency
+		Cost optimization
+
+
+AWS Global Infrastructure
+	Regions
+	Availability Zones (number of locations?)
+	Edge Locations (CloudFront)
+	Regions -> Availability Zones

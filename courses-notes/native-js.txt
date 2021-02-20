@@ -1,0 +1,14 @@
+
+replace ajax
+	fetch (promises)
+
+selecting elements
+	querySelector / querySelectorAll document methods
+
+working with events
+	document.querySelector.addEventListener(event, fn, eventCapturing)
+	event.target -- element
+
+data binding
+	input   -> data -> view
+	service ->
