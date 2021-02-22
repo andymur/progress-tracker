@@ -177,3 +177,8 @@ AWS CloudFormation
 	Create stack (providing teamplate)
 	Give it a name
 	
+CloudWatch
+	
+	Monitoring tab (CloudWatch Metrics)
+	Add/Edit Alarms (Conditions for triggers -> Actions)
+	Create Dashboards 
