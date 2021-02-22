@@ -1,0 +1,184 @@
+Some Advantages of cloud
+
+	CapEx vs OpEx
+
+	no contractual commitment
+
+	costs decrease over time
+
+	reduced procurement delays
+
+	shared responsibility model
+	pay as you go
+
+	flexibility
+		- elasticity
+
+	massive global infrastructure
+
+	regions
+	availability zones
+	edge locations
+
+	SaaS, PaaS, IaaS (XaaS)
+
+	API emphasis
+
+	RESTful APIs
+
+Key Services of AWS
+
+	Compute & Storage & DB & Networking components
+
+	Compute
+
+		Lightsail lighter version of EC2
+		Lambda only for computing (instead of normal vm)
+		Batch similar to lambda but jobs instead of functions
+
+		Elastic Beanstalk is a paas 
+		Serverless Application Repository is for Lambda
+
+		Containers is an evolution of compute components
+
+		Elastic Container Registry is a catalog for the containers
+		Elastic Container Service for docker containers
+		Elastic K8s Service for k8s
+
+	Storage
+
+		S3 is a big bucket
+		EFS (elastic nfs for *nix machines)
+		FSx for windows but it is umbrella term
+		S3 Glacier for archives
+		Storage Gateway 
+		AWS Backup
+
+	Database
+
+		RDS (different relational engines)
+		Dynamo DB (NoSQL)
+		Elastic Cache (Redis & Memcached)
+		Neptune (Graph database engine)
+		Redshift (for data warehouse)
+		DocumentDB (document db storage)
+
+	Network & CD
+
+		VPC (virtual private cloud) space for network components (ip subnets, routing firewalls, network interface cards)
+		CloudFront for remote areas kind of CD
+		Route 53 -- DNS service
+		API Gateway make APIs globally awailable
+
+AWS Management Options
+
+	AWS CLI
+	AWS SDKs
+	Identity and access management (IAM)
+	```aws configure``` to setup an access
+
+Well Architected Framework (consider reading it)
+
+	5 pillars:
+		Operational excellence
+		Security
+		Reliability
+		Performance efficiency
+		Cost optimization
+
+
+AWS Global Infrastructure
+	Regions
+	Availability Zones (number of locations?)
+	Edge Locations (CloudFront)
+	Regions -> Availability Zones
+
+<<<<<<< HEAD
+
+
+AWS CloudFormation
+
+	Create stack (providing teamplate)
+	Give it a name
+	
+=======
+Multi Tier Architecture
+
+	Scaling Approaches
+		Vertical (not recommended for aws)
+		Horizontal
+
+Multi Tier Architecture on EC2
+
+	Security group
+	AWS market place	
+	Auto Scaling Group
+	VPC (virtual private cloud)
+
+	Elastic IP addres is not free of charge but it's not chaging
+	Placement group (to collocate instance)
+	IAM account to rue it
+	Elastice Inference (Additional CPU)
+	User data (script to execute when it launches!)
+
+Advantages Multi Tier design
+
+	Fine grained management
+	Decoupling
+	Promotes multiple teams
+
+Decoupling in Design
+
+	Loose decoubling (no awareness about other components)
+	"Black boxes"
+	SQS (queuing), SNS (notification), API Gateway for decoupling
+
+Simple Queue Service
+
+	FIFO vs Normal Queue
+	Normal queue no guarantees about duplication & order
+	FIFO should have extenstion of fifo
+
+	Message Group ID, Message Deduplication ID, Message Attributes (kind of tags)
+	Can be connected with Lambda
+
+Simple Notification Service
+	
+	SNS -> SQS
+	PubSub model
+	System to system messaging
+	Here we have topics
+	Subscriber (e.g. email), endpoint (e.g. email address)
+
+API Gateway
+
+	create, maintain and secure APIs
+	HTTP API
+	Websocket API
+	REST API
+	
+Autoscaling
+
+	Create autoscaling launch configuration
+	Several metrics to use (cpu, network etc)
+
+Load Balancing
+	
+	ELB
+	Network balancer (TCP,UDP) vs Application balancer (HTTP, HTTPS)
+	Internal or public
+
+
+Choosing storage
+
+	S3 (simple storage service)
+	EBS (Elastic block storage) for EC2 vms
+	EBS located within EC2 AZ
+	EBS can be snapshoted
+	EFS replicated FS for *nix or FSx for windows (possible to have for different AZs)
+	
+
+	S3 storage classes
+	S3 is not a file storage rather object storage
+	
+>>>>>>> additions
