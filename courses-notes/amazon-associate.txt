@@ -92,3 +92,11 @@ AWS Global Infrastructure
 	Availability Zones (number of locations?)
 	Edge Locations (CloudFront)
 	Regions -> Availability Zones
+
+
+
+AWS CloudFormation
+
+	Create stack (providing teamplate)
+	Give it a name
+	
