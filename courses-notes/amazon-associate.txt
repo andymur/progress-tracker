@@ -182,3 +182,17 @@ CloudWatch
 	Monitoring tab (CloudWatch Metrics)
 	Add/Edit Alarms (Conditions for triggers -> Actions)
 	Create Dashboards 
+
+
+ECS
+	Elastic Container Service for managing and orchestrating containers
+	Amazon Elastic Container Registry
+	Run them on EC2 or Fargate (Serverless)
+
+
+Lambda
+
+	Serverless compute
+	Charged only for calls
+	Create a function
+	
