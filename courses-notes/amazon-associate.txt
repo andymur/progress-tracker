@@ -196,3 +196,34 @@ Lambda
 	Charged only for calls
 	Create a function
 	
+Storage Gateway
+
+	Three products
+		File Gateway
+		Volume Gateway
+		Tape Gateway
+
+	VM implemented in your environment (between your env and AWS cloud infrastructure)
+
+	File Gateway has interface for S3 also NFS & SMB (server message block) supported
+		Cost effective way for storage for your prem vm
+
+	Volume Gateway is mounting cloud volume to your devices
+		Cached volumes (for active use) (AWS S3) Stored volumes (more for backup)
+
+	Tape Gateway
+		Cloud-based storage for tape backups (to Glacier / Deep Archive)
+
+
+AWS Snowball
+
+	AWS Import/Export -- old classic way to put your data to AWS
+	Snowball is the secure efficient way to send your data to AWS
+
+VPCs
+
+	Virtual Private Cloud
+	VPC dashboard
+	VPC consists of: subnets, route tables, gateways, dhcp options, elastic ips, security groups
+	Access via Internet gateway
+	Network ACL is a firewall for VPC
