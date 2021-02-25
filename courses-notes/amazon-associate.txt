@@ -227,3 +227,8 @@ VPCs
 	VPC consists of: subnets, route tables, gateways, dhcp options, elastic ips, security groups
 	Access via Internet gateway
 	Network ACL is a firewall for VPC
+
+Route53
+	
+	DNS AWS Service
+	make sure you understand all type record types (DNS)
