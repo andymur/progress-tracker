@@ -232,3 +232,17 @@ Route53
 	
 	DNS AWS Service
 	make sure you understand all type record types (DNS)
+
+
+CloudFront
+
+	Content Delivery Network
+	(Caching and Edge Locations)
+	Create a distribution
+
+Self Managed DB Solutions
+
+	(old school your own dbms)
+	build ec2 instance (OS for your dbms) may be with AMI
+	or create AMI out of your instance
+		
