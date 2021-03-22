@@ -246,3 +246,52 @@ Self Managed DB Solutions
 	build ec2 instance (OS for your dbms) may be with AMI
 	or create AMI out of your instance
 		
+AWS RDS
+
+	variety of engines
+
+Dynamo DB
+	
+	DAX (NoSQL DB, Dynamo auxilirator...cache near to your users)
+	
+Elastic Cache
+	
+	2Cache engines: Redic & Memcached
+
+Redshift
+
+	DWH solution (column based)
+
+DMS
+
+	Migration the data into AWs (Data Migration Service)
+	inital migration
+	ongoing replication (till the cut over)
+	choose an instance, create migration task
+
+DataSync
+
+	not DB data (e.g. logfiles)
+	(kind of rsync i.e. files sync)
+	NFS <-> SMB
+	Similar to Storage Gateway
+
+Athena
+
+	SQL against S3
+	Serveless
+
+
+AWS Glue
+
+Macie
+
+	S3 for sensitive information
+	AI service which could categorize S3 data
+
+Kinesis
+
+	Stream information data in AWS
+	Video/Data/Data Firehouse/Analytics on the streams
+	Good for IoT
+	
