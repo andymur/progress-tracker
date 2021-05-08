@@ -51,7 +51,7 @@ Key Services of AWS
 		EFS (elastic nfs for *nix machines)
 		FSx for windows but it is umbrella term
 		S3 Glacier for archives
-		Storage Gateway 
+		Storage Gateway  (???)
 		AWS Backup
 
 	Database
@@ -196,7 +196,7 @@ Lambda
 	Charged only for calls
 	Create a function
 	
-Storage Gateway
+Storage Gateway (???)
 
 	Three products
 		File Gateway
@@ -295,3 +295,99 @@ Kinesis
 	Video/Data/Data Firehouse/Analytics on the streams
 	Good for IoT
 	
+
+Secure Architecture
+
+IAM
+
+	Identity & Access Management
+	Billing could be changed only with Root (normally not used)
+
+	Create Users & Groups & Roles
+	Creating user we specifty programmatic access & management console access
+	Group is a rights container
+	Roles are resources for access from other resources (for services)
+
+Firewalls
+
+	Network Secuirty Group's inbound & outbound rules could be firewall
+	Network Security Groups connected via network interfaces
+	Network ACL (VPC category)
+	Network ACL is not statefull (apply inbound + outbound separately)
+	ACL diff Security Group ???
+
+AWS WAF
+
+	Web based application firewall
+	AWS Shild (anti DDoS)
+	AWS Firewall Manager
+
+AWS KMS
+
+	Key Managment Service
+	Key policies
+	AWS Managed Keys
+	Customer managed keys
+	Custom key stores
+
+	Can be used for example to S3 encryption
+	ARN (amazon resource name)
+
+Cost Optimized Architecture
+
+AWS Organization
+
+Billing Alarms
+
+Cost-effective compute and DB
+
+	Trusted advisor service
+	Lambda instead of EC2
+	S3 + Route53 for static websites (instead EC2)
+
+EC2 Instance Purchase Options
+
+	Launching (price on demand)
+	Reserved (another option like a contract)
+	Spot instance (bidding on compute capacity)
+	
+Cost optimized Network Architectures
+	Billing section in FAQ
+	Cost Explorer as a good tool
+
+S3 Storage classes
+	docs.aws.amazon.com
+	https://docs.aws.amazon.com/s3/?id=docs_gateway
+
+
+
+------- S3 Additional ------
+
+
+S3 has
+
+- buckets
+	A bucket is a container for objects stored in Amazon S3
+
+- access points
+
+- objects
+	Objects consist of object data and metadata (k,v pair)
+
+- keys
+	Amazon S3 as a basic data map between "bucket + key + version" and the object itself. One key for one object.
+
+S3 API
+
+
+-------- EC2 Additional -------
+
+
+-------- Lambda Additional ------
+
+
+------- Storage Gateway -------
+
+
+-------- VPC Additional -------
+
